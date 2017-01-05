@@ -55,7 +55,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>9</executionTimeResult>
+      <executionTimeResult>11</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -101,7 +101,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-05 14:10:03.871 UTC</lastRunResult>
+  <lastRunResult>2017-01-05 14:12:04.797 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.game</packageName>
