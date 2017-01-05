@@ -3,8 +3,66 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$latitude</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Location</factType>
+            <fieldName>latitude</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$longitude</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Location</factType>
+            <fieldName>longitude</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>Location</factType>
+      <boundName>$l</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
+  <rhs>
+    <assert>
+      <fieldValues>
+        <fieldValue>
+          <field>location</field>
+          <value>=$l</value>
+          <nature>2</nature>
+          <type>Location</type>
+        </fieldValue>
+        <fieldValue>
+          <field>name</field>
+          <value>$cityName</value>
+          <nature>7</nature>
+          <type>String</type>
+        </fieldValue>
+      </fieldValues>
+      <factType>City</factType>
+      <isBound>false</isBound>
+    </assert>
+  </rhs>
   <imports>
     <imports/>
   </imports>
@@ -13,9 +71,37 @@
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+        <string>0</string>
+        <string>2</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$longitude</string>
+      <list>
+        <string>2.2</string>
+        <string>-2.2</string>
+        <string>0.5</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$cityName</string>
+      <list>
+        <string>cityA</string>
+        <string>cityB</string>
+        <string>cityC</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$latitude</string>
+      <list>
+        <string>1.1</string>
+        <string>-1.1</string>
+        <string>0.5</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>2</idCol>
+  <rowsCount>3</rowsCount>
 </rule>
