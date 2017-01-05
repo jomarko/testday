@@ -8,7 +8,7 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
-            <value>$latitude</value>
+            <value>$default</value>
             <operator>==</operator>
             <constraintValueType>7</constraintValueType>
             <expression>
@@ -70,6 +70,14 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$default</string>
+      <list>
+        <string></string>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>1</string>
@@ -91,14 +99,6 @@
         <string>cityA</string>
         <string>cityB</string>
         <string>cityC</string>
-      </list>
-    </entry>
-    <entry>
-      <string>$latitude</string>
-      <list>
-        <string>1.1</string>
-        <string>-1.1</string>
-        <string>0.5</string>
       </list>
     </entry>
   </table>
