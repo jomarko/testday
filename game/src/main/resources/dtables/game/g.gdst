@@ -10,7 +10,86 @@
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
-  <conditionPatterns/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>Player</factType>
+      <boundName>$p</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>ddd</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>score</factField>
+          <fieldType>Integer</fieldType>
+          <operator>==</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>hfd</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+          <type>exists</type>
+          <patterns>
+            <org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
+              <factPattern>
+                <factType>Player</factType>
+                <isNegated>false</isNegated>
+                <window>
+                  <parameters/>
+                </window>
+              </factPattern>
+              <expression>
+                <binding>ert</binding>
+                <parts>
+                  <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                    <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                      <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                      <name>winner</name>
+                      <classType>boolean</classType>
+                      <genericType>Boolean</genericType>
+                    </next>
+                    <name>$p</name>
+                    <classType>Player</classType>
+                    <genericType>Player</genericType>
+                    <factType>Player</factType>
+                  </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                  <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                </parts>
+                <index>2147483647</index>
+              </expression>
+            </org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
+          </patterns>
+        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>hfd</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+  </conditionPatterns>
   <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -40,9 +119,38 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.Number</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>dtables.game</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
