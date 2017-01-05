@@ -39,49 +39,45 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>hfd</header>
+      <header>number</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
-          <type>exists</type>
-          <patterns>
-            <org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
-              <factPattern>
+        <org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
+          <factPattern>
+            <factType>Number</factType>
+            <boundName>myNumber</boundName>
+            <isNegated>false</isNegated>
+            <window>
+              <parameters/>
+            </window>
+          </factPattern>
+          <expression>
+            <binding>$exp</binding>
+            <parts>
+              <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                  <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                  <name>score</name>
+                  <classType>int</classType>
+                  <genericType>Integer</genericType>
+                </next>
+                <name>$p</name>
+                <classType>Player</classType>
+                <genericType>Player</genericType>
                 <factType>Player</factType>
-                <isNegated>false</isNegated>
-                <window>
-                  <parameters/>
-                </window>
-              </factPattern>
-              <expression>
-                <binding>ert</binding>
-                <parts>
-                  <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                    <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                      <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                      <name>winner</name>
-                      <classType>boolean</classType>
-                      <genericType>Boolean</genericType>
-                    </next>
-                    <name>$p</name>
-                    <classType>Player</classType>
-                    <genericType>Player</genericType>
-                    <factType>Player</factType>
-                  </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                  <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
-                </parts>
-                <index>2147483647</index>
-              </expression>
-            </org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
-          </patterns>
-        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+              </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+              <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+            </parts>
+            <index>2147483647</index>
+          </expression>
+        </org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>hfd</header>
+          <header>number</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
           <parameters/>
@@ -141,6 +137,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
