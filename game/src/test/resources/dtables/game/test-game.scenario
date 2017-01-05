@@ -11,6 +11,11 @@
           <value>10</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>winner</name>
+          <value>true</value>
+          <nature>1</nature>
+        </field-data>
       </fieldData>
       <name>p1</name>
       <isModify>false</isModify>
@@ -22,6 +27,11 @@
           <name>score</name>
           <value>7</value>
           <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>winner</name>
+          <value>true</value>
+          <nature>1</nature>
         </field-data>
       </fieldData>
       <name>p2</name>
@@ -35,16 +45,26 @@
           <value>11</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>winner</name>
+          <value>true</value>
+          <nature>1</nature>
+        </field-data>
       </fieldData>
       <name>p3</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>9</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>winner</fieldName>
           <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[p1] field [winner] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -57,6 +77,8 @@
         <expect-field>
           <fieldName>winner</fieldName>
           <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[p2] field [winner] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -69,6 +91,8 @@
         <expect-field>
           <fieldName>winner</fieldName>
           <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[p3] field [winner] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -77,6 +101,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-01-05 14:10:03.871 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.game</packageName>
