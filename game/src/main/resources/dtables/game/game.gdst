@@ -140,7 +140,7 @@
               <constraintList>
                 <constraints>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>$w1.score</value>
+                    <value>$w1.getScore()</value>
                     <operator>&gt;</operator>
                     <constraintValueType>3</constraintValueType>
                     <expression>
