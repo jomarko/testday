@@ -11,88 +11,66 @@
   <metadataCols/>
   <attributeCols/>
   <conditionPatterns>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>two players</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <factType>Player</factType>
-          <boundName>p1</boundName>
-          <isNegated>false</isNegated>
-          <window>
-            <parameters/>
-          </window>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>p1</value>
-                <operator>!=</operator>
-                <constraintValueType>2</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Player</factType>
-                <fieldName>this</fieldName>
-                <fieldType>this</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-            </constraints>
-          </constraintList>
-          <factType>Player</factType>
-          <boundName>p2</boundName>
-          <isNegated>false</isNegated>
-          <window>
-            <parameters/>
-          </window>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
-        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
-          <type>not</type>
-          <patterns>
-            <org.drools.workbench.models.datamodel.rule.FactPattern>
-              <constraintList>
-                <constraints>
-                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                    <value>p1.score</value>
-                    <operator>&gt;</operator>
-                    <constraintValueType>3</constraintValueType>
-                    <expression>
-                      <parts/>
-                      <index>2147483647</index>
-                    </expression>
-                    <parameters/>
-                    <factType>Player</factType>
-                    <fieldName>score</fieldName>
-                    <fieldType>Integer</fieldType>
-                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                </constraints>
-              </constraintList>
-              <factType>Player</factType>
-              <isNegated>false</isNegated>
-              <window>
-                <parameters/>
-              </window>
-            </org.drools.workbench.models.datamodel.rule.FactPattern>
-          </patterns>
-        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+    <Pattern52>
+      <factType>Player</factType>
+      <boundName>$p1</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>two players</header>
+          <header>first player</header>
           <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
+          <operator>!= null</operator>
           <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+    <Pattern52>
+      <factType>Player</factType>
+      <boundName>$p2</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString>$p1</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>second player</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
+          <operator>!=</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>score less than</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>score</factField>
+          <fieldType>Integer</fieldType>
+          <operator>&lt;</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
@@ -170,9 +148,19 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
+        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
