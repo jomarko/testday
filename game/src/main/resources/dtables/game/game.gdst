@@ -81,8 +81,8 @@
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>set winner</header>
-      <boundName>p1</boundName>
+      <header>set is winner p1</header>
+      <boundName>$p1</boundName>
       <factField>winner</factField>
       <type>Boolean</type>
       <update>false</update>
@@ -96,7 +96,7 @@
       <hideColumn>false</hideColumn>
       <width>-1</width>
       <header>set winner p2</header>
-      <boundName>p2</boundName>
+      <boundName>$p2</boundName>
       <factField>winner</factField>
       <type>Boolean</type>
       <update>false</update>
@@ -148,19 +148,19 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>$p1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <valueString>$p1.score</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
