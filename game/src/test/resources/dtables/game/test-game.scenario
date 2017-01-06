@@ -55,7 +55,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>17</executionTimeResult>
+      <executionTimeResult>8</executionTimeResult>
       <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -171,15 +171,90 @@
       <name>ph2</name>
       <anonymous>false</anonymous>
     </expect-fact>
-    <retract-fact>
-      <name>ph1</name>
-    </retract-fact>
-    <execution-trace/>
+    <fact-data>
+      <type>Player</type>
+      <fieldData>
+        <field-data>
+          <name>score</name>
+          <value>100</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>winner</name>
+          <value>false</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>ph3</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace>
+      <executionTimeResult>2</executionTimeResult>
+      <numberOfRulesFired>5</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>winner</fieldName>
-          <expected>true</expected>
+          <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[p1] field [winner] was [false].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>p1</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>winner</fieldName>
+          <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[p2] field [winner] was [false].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>p2</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>winner</fieldName>
+          <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[p3] field [winner] was [false].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>p3</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>winner</fieldName>
+          <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[ph1] field [winner] was [false].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>ph1</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>winner</fieldName>
+          <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[ph2] field [winner] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -187,8 +262,22 @@
       <name>ph2</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>winner</fieldName>
+          <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[ph3] field [winner] was [true].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>ph3</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-06 07:51:07.376 UTC</lastRunResult>
+  <lastRunResult>2017-01-06 07:55:01.438 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.game</packageName>
