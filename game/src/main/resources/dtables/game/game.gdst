@@ -133,6 +133,35 @@
             <parameters/>
           </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
+        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+          <type>not</type>
+          <patterns>
+            <org.drools.workbench.models.datamodel.rule.FactPattern>
+              <constraintList>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>$w1.score</value>
+                    <operator>&gt;</operator>
+                    <constraintValueType>3</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Player</factType>
+                    <fieldName>score</fieldName>
+                    <fieldType>Integer</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </constraintList>
+              <factType>Player</factType>
+              <isNegated>false</isNegated>
+              <window>
+                <parameters/>
+              </window>
+            </org.drools.workbench.models.datamodel.rule.FactPattern>
+          </patterns>
+        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
