@@ -15,7 +15,27 @@
       <name>newCustomer</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Customer</type>
+      <fieldData>
+        <field-data>
+          <name>combinedBalance</name>
+          <value>20000</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>platinumCustomer</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace/>
+    <expect-rule>
+      <ruleName>dtables.customers.ProfileAssignment_13</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>dtables.customers.ProfileAssignment_17</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
   <rules/>
   <inclusive>false</inclusive>
