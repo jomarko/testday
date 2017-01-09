@@ -12,6 +12,8 @@ public class Customer implements java.io.Serializable
    private java.util.Date customerSince;
    private java.lang.Double combinedBalance;
 
+   private java.lang.String profile;
+
    public Customer()
    {
    }
@@ -36,11 +38,22 @@ public class Customer implements java.io.Serializable
       this.combinedBalance = combinedBalance;
    }
 
-   public Customer(java.util.Date customerSince,
-         java.lang.Double combinedBalance)
+   public java.lang.String getProfile()
+   {
+      return this.profile;
+   }
+
+   public void setProfile(java.lang.String profile)
+   {
+      this.profile = profile;
+   }
+
+   public Customer(java.util.Date customerSince, java.lang.Double combinedBalance,
+         java.lang.String profile)
    {
       this.customerSince = customerSince;
       this.combinedBalance = combinedBalance;
+      this.profile = profile;
    }
 
 }
