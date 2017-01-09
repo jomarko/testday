@@ -28,25 +28,39 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>15</executionTimeResult>
+      <executionTimeResult>18</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>dtables.customers.ProfileAssignment_13</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [dtables.customers.ProfileAssignment_13] was not activated. Expected it to be activated.</explanation>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
-    </expect-rule>
-    <expect-rule>
-      <ruleName>dtables.customers.ProfileAssignment_17</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [dtables.customers.ProfileAssignment_17] was not activated. Expected it to be activated.</explanation>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
-    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>profile</fieldName>
+          <expected>new</expected>
+          <successResult>true</successResult>
+          <explanation>[newCustomer] field [profile] was [new].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>newCustomer</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>profile</fieldName>
+          <expected>platinum</expected>
+          <successResult>true</successResult>
+          <explanation>[platinumCustomer] field [profile] was [platinum].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>platinumCustomer</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-09 15:20:28.760 UTC</lastRunResult>
+  <lastRunResult>2017-01-09 15:39:32.65 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.customers</packageName>
