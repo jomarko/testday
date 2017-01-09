@@ -27,16 +27,26 @@
       <name>platinumCustomer</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>dtables.customers.ProfileAssignment_13</ruleName>
-      <expectedFire>true</expectedFire>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [dtables.customers.ProfileAssignment_13] was not activated. Expected it to be activated.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>dtables.customers.ProfileAssignment_17</ruleName>
-      <expectedFire>true</expectedFire>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [dtables.customers.ProfileAssignment_17] was not activated. Expected it to be activated.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2017-01-09 15:20:28.760 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.customers</packageName>
