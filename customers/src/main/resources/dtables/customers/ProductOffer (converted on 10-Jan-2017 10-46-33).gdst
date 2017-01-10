@@ -58,6 +58,31 @@
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <Pattern52>
+      <factType>Customer</factType>
+      <boundName>c</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>DATE</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>lt</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>customerSince</factField>
+          <fieldType>Date</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -138,6 +163,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>&quot;newCustomer&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -161,6 +191,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueDate>2017-01-09 23:00:00.0 UTC</valueDate>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>&quot;bronze&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -176,6 +212,11 @@
       <value>
         <valueString>Silver</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -207,6 +248,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>&quot;gold&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -222,6 +268,11 @@
       <value>
         <valueString>Platinum</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
