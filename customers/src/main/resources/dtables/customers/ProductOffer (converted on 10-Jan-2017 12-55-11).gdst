@@ -23,7 +23,7 @@
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>param1</value>
-                <operator>==</operator>
+                <operator>in</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -48,7 +48,7 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>Customer Profile</header>
+          <header>Converted from [&apos;Customer Profile&apos;]</header>
           <constraintValueType>1</constraintValueType>
           <factField>profile</factField>
           <fieldType>String</fieldType>
