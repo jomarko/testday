@@ -150,7 +150,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>&quot;new&quot;</valueString>
+        <valueString>&quot;new&quot;, bronze</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
