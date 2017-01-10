@@ -16,6 +16,7 @@
       <width>-1</width>
       <header>Converted from [&apos;Customer Profile&apos;]</header>
       <constraintValueType>1</constraintValueType>
+      <parameters/>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
           <constraintList>
@@ -28,6 +29,7 @@
                   <parts/>
                   <index>2147483647</index>
                 </expression>
+                <parameters/>
                 <factType>Customer</factType>
                 <fieldName>profile</fieldName>
                 <fieldType>String</fieldType>
@@ -37,6 +39,9 @@
           <factType>Customer</factType>
           <boundName>customer</boundName>
           <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
       </definition>
       <childColumns>
@@ -47,6 +52,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>profile</factField>
           <fieldType>String</fieldType>
+          <parameters/>
           <varName>param1</varName>
           <factType>Customer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
@@ -59,21 +65,65 @@
       <width>-1</width>
       <header>Converted from [&apos;Offer Product&apos;]</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>Offer offer = new Offer(); offer.setCustomer(customer); offer.setProduct(@{param2}); insert(offer);</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+        <org.drools.workbench.models.datamodel.rule.ActionInsertFact>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>customer</field>
+              <value>=customer</value>
+              <nature>2</nature>
+              <type>Customer</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>product</field>
+              <value>$default</value>
+              <nature>7</nature>
+              <type>String</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <factType>Offer</factType>
+          <isBound>false</isBound>
+        </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Offer Product</header>
-          <varName>param2</varName>
-          <fieldType>Object</fieldType>
+          <width>285</width>
+          <header>Converted from [&apos;Offer Product&apos;]</header>
+          <varName>$default</varName>
+          <fieldType>String</fieldType>
+          <factType>Offer</factType>
+          <factField>product</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
+  <auditLog>
+    <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
+      <acceptedTypes>
+        <entry>
+          <string>INSERT_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>INSERT_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>UPDATE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+      </acceptedTypes>
+    </filter>
+    <entries/>
+  </auditLog>
   <imports>
     <imports>
       <org.drools.workbench.models.datamodel.imports.Import>
@@ -90,6 +140,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -104,7 +155,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>&quot;product for newbie&quot;</valueString>
+        <valueString>product for newbie</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -112,6 +163,7 @@
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -126,7 +178,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>&quot;something better&quot;</valueString>
+        <valueString>something better</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -134,6 +186,7 @@
     <list>
       <value>
         <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -148,7 +201,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>&quot;credit card&quot;</valueString>
+        <valueString>credit card</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -156,6 +209,7 @@
     <list>
       <value>
         <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -170,7 +224,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>&quot;holiday&quot;</valueString>
+        <valueString>holiday</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -178,6 +232,7 @@
     <list>
       <value>
         <valueNumeric class="int">5</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -192,7 +247,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>&quot;car&quot;</valueString>
+        <valueString>car</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
