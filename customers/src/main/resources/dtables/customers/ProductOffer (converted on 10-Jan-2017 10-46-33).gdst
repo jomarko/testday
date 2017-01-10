@@ -16,6 +16,7 @@
       <width>-1</width>
       <header>Converted from [&apos;Balance Range&apos;]</header>
       <constraintValueType>1</constraintValueType>
+      <parameters/>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
           <constraintList>
@@ -28,6 +29,7 @@
                   <parts/>
                   <index>2147483647</index>
                 </expression>
+                <parameters/>
                 <factType>Customer</factType>
                 <fieldName>customerSince</fieldName>
                 <fieldType>Date</fieldType>
@@ -37,6 +39,9 @@
           <factType>Customer</factType>
           <boundName>customer</boundName>
           <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
       </definition>
       <childColumns>
@@ -47,6 +52,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>customerSince</factField>
           <fieldType>Date</fieldType>
+          <parameters/>
           <varName>param1</varName>
           <factType>Customer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
@@ -74,6 +80,33 @@
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
+  <auditLog>
+    <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
+      <acceptedTypes>
+        <entry>
+          <string>INSERT_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>INSERT_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>UPDATE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+      </acceptedTypes>
+    </filter>
+    <entries/>
+  </auditLog>
   <imports>
     <imports>
       <org.drools.workbench.models.datamodel.imports.Import>
@@ -90,6 +123,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -99,6 +133,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -111,6 +146,7 @@
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -120,6 +156,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -132,6 +169,7 @@
     <list>
       <value>
         <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -141,6 +179,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -153,6 +192,7 @@
     <list>
       <value>
         <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -162,6 +202,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -174,6 +215,7 @@
     <list>
       <value>
         <valueNumeric class="int">5</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -183,6 +225,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
