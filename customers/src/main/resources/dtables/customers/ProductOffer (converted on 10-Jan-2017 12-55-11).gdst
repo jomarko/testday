@@ -87,7 +87,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>285</width>
+          <width>-1</width>
           <header>Converted from [&apos;Offer Product&apos;]</header>
           <varName>$default</varName>
           <fieldType>String</fieldType>
