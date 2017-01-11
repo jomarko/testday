@@ -1,3 +1,21 @@
 <graph>
-  <entries/>
+  <entries>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@testday/vacation/src/main/resources/dtables/vacation/basic-vacation.gdst</uri>
+          <fileName>basic-vacation.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://cc99064894cd72279bb5e777cca157c0644ca6ea@testday/vacation/src/main/resources/dtables/vacation/basic-vacation.gdst</uri>
+        <fileName>basic-vacation.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-250.0</x>
+      <y>-1000.0</y>
+    </entry>
+  </entries>
 </graph>
