@@ -3,23 +3,6 @@
     <entry>
       <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
         <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
-          <uri>default://master@testday/vacation/src/main/resources/dtables/vacation/extra-vacation.gdst</uri>
-          <fileName>extra-vacation.gdst</fileName>
-          <attributes/>
-          <hasVersionSupport>true</hasVersionSupport>
-        </path>
-      </pathHead>
-      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
-        <uri>default://19a8b8cc75186cc5c59a8276d3aa65b2599a2de7@testday/vacation/src/main/resources/dtables/vacation/extra-vacation.gdst</uri>
-        <fileName>extra-vacation.gdst</fileName>
-        <hasVersionSupport>false</hasVersionSupport>
-      </pathVersion>
-      <x>-540.0</x>
-      <y>-727.0</y>
-    </entry>
-    <entry>
-      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
-        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
           <uri>default://master@testday/vacation/src/main/resources/dtables/vacation/basic-vacation.gdst</uri>
           <fileName>basic-vacation.gdst</fileName>
           <attributes/>
@@ -33,6 +16,23 @@
       </pathVersion>
       <x>-250.0</x>
       <y>-1000.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@testday/vacation/src/main/resources/dtables/vacation/extra-vacation.gdst</uri>
+          <fileName>extra-vacation.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://3fc7879f32955298cb28b98ec4bb0a9a84d4761a@testday/vacation/src/main/resources/dtables/vacation/extra-vacation.gdst</uri>
+        <fileName>extra-vacation.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-540.0</x>
+      <y>-727.0</y>
     </entry>
   </entries>
 </graph>
