@@ -14,6 +14,8 @@ public class Customer implements java.io.Serializable
 
    private java.lang.String profile;
 
+   private java.lang.Integer id;
+
    public Customer()
    {
    }
@@ -48,12 +50,23 @@ public class Customer implements java.io.Serializable
       this.profile = profile;
    }
 
+   public java.lang.Integer getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Integer id)
+   {
+      this.id = id;
+   }
+
    public Customer(java.util.Date customerSince, java.lang.Double combinedBalance,
-         java.lang.String profile)
+         java.lang.String profile, java.lang.Integer id)
    {
       this.customerSince = customerSince;
       this.combinedBalance = combinedBalance;
       this.profile = profile;
+      this.id = id;
    }
 
 }
