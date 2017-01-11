@@ -34,6 +34,32 @@
                 <fieldName>profile</fieldName>
                 <fieldType>String</fieldType>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <value>$gt</value>
+                <operator>&gt;</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>Customer</factType>
+                <fieldName>customerSince</fieldName>
+                <fieldType>Date</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <value>$lt</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>Customer</factType>
+                <fieldName>customerSince</fieldName>
+                <fieldType>Date</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
             </constraints>
           </constraintList>
           <factType>Customer</factType>
@@ -56,34 +82,30 @@
           <varName>param1</varName>
           <factType>Customer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Converted from [&apos;Customer Profile&apos;]</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>customerSince</factField>
+          <fieldType>Date</fieldType>
+          <parameters/>
+          <varName>$gt</varName>
+          <factType>Customer</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Converted from [&apos;Customer Profile&apos;]</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>customerSince</factField>
+          <fieldType>Date</fieldType>
+          <parameters/>
+          <varName>$lt</varName>
+          <factType>Customer</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <Pattern52>
-      <factType>Customer</factType>
-      <boundName>$c</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_DOUBLE</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>216</width>
-          <header>ccc</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>combinedBalance</factField>
-          <fieldType>Double</fieldType>
-          <operator>!=</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <operator></operator>
-        <parameters/>
-      </window>
-    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -181,8 +203,14 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueDate>2016-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -209,8 +237,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueDate>2015-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueDate>2016-12-31 23:00:00.0 UTC</valueDate>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -237,8 +272,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueDate>2014-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueDate>2015-12-31 23:00:00.0 UTC</valueDate>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -265,8 +307,15 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueDate>2013-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueDate>2014-12-31 23:00:00.0 UTC</valueDate>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -294,7 +343,13 @@
       </value>
       <value>
         <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
+        <dataType>DATE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueDate>2013-12-31 23:00:00.0 UTC</valueDate>
+        <valueString></valueString>
+        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
