@@ -43,7 +43,13 @@
       <fieldValues>
         <expect-field>
           <fieldName>customerId</fieldName>
-          <expected></expected>
+          <expected>1</expected>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>product</fieldName>
+          <expected>credit card</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
