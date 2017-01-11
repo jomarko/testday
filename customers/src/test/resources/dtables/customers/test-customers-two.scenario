@@ -16,18 +16,13 @@
           <value>22-Dec-2016</value>
           <nature>1</nature>
         </field-data>
-        <field-data>
-          <name>profile</name>
-          <value>silver</value>
-          <nature>4</nature>
-        </field-data>
       </fieldData>
       <name>c</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>9</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>23</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -44,8 +39,20 @@
       <name>c</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>customerId</fieldName>
+          <expected></expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Offer</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-11 09:14:48.16 UTC</lastRunResult>
+  <lastRunResult>2017-01-11 10:34:48.334 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.customers</packageName>
