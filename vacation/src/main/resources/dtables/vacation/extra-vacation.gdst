@@ -146,7 +146,7 @@
       <width>-1</width>
       <header>5 extra days</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+        <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>days</field>
@@ -156,7 +156,7 @@
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
           <variable>$v</variable>
-        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+        </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -173,7 +173,7 @@
       <width>-1</width>
       <header>2 extra days</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+        <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>days</field>
@@ -183,7 +183,7 @@
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
           <variable>$v</variable>
-        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+        </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -200,7 +200,7 @@
       <width>-1</width>
       <header>3 extra days</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+        <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>days</field>
@@ -210,7 +210,7 @@
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
           <variable>$v</variable>
-        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
+        </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
