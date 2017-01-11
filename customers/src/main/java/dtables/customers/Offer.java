@@ -9,21 +9,12 @@ public class Offer implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private dtables.customers.Customer customer;
    private java.lang.String product;
+
+   private java.lang.Integer customerId;
 
    public Offer()
    {
-   }
-
-   public dtables.customers.Customer getCustomer()
-   {
-      return this.customer;
-   }
-
-   public void setCustomer(dtables.customers.Customer customer)
-   {
-      this.customer = customer;
    }
 
    public java.lang.String getProduct()
@@ -36,10 +27,20 @@ public class Offer implements java.io.Serializable
       this.product = product;
    }
 
-   public Offer(dtables.customers.Customer customer, java.lang.String product)
+   public java.lang.Integer getCustomerId()
    {
-      this.customer = customer;
+      return this.customerId;
+   }
+
+   public void setCustomerId(java.lang.Integer customerId)
+   {
+      this.customerId = customerId;
+   }
+
+   public Offer(java.lang.String product, java.lang.Integer customerId)
+   {
       this.product = product;
+      this.customerId = customerId;
    }
 
 }
