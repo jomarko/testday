@@ -75,11 +75,12 @@
           <constraintValueType>1</constraintValueType>
           <factField>combinedBalance</factField>
           <fieldType>Double</fieldType>
-          <operator>==</operator>
+          <operator>!=</operator>
           <parameters/>
         </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
