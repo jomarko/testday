@@ -22,7 +22,7 @@
           <constraintList>
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>$default</value>
+                <value>$lessThan</value>
                 <operator>&lt;</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
@@ -35,7 +35,7 @@
                 <fieldType>Date</fieldType>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>$default1</value>
+                <value>$greaterThan</value>
                 <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
@@ -66,7 +66,7 @@
           <factField>customerSince</factField>
           <fieldType>Date</fieldType>
           <parameters/>
-          <varName>$default</varName>
+          <varName>$lessThan</varName>
           <factType>Customer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
@@ -77,7 +77,7 @@
           <factField>customerSince</factField>
           <fieldType>Date</fieldType>
           <parameters/>
-          <varName>$default1</varName>
+          <varName>$greaterThan</varName>
           <factType>Customer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
