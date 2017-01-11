@@ -262,6 +262,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueDate>2013-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
