@@ -34,32 +34,6 @@
                 <fieldName>profile</fieldName>
                 <fieldType>String</fieldType>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>$default1</value>
-                <operator>&lt;</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Customer</factType>
-                <fieldName>customerSince</fieldName>
-                <fieldType>Date</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>$default</value>
-                <operator>&gt;=</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Customer</factType>
-                <fieldName>customerSince</fieldName>
-                <fieldType>Date</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
             </constraints>
           </constraintList>
           <factType>Customer</factType>
@@ -73,35 +47,13 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>230</width>
           <header>Converted from [&apos;Customer Profile&apos;]</header>
           <constraintValueType>1</constraintValueType>
           <factField>profile</factField>
           <fieldType>String</fieldType>
           <parameters/>
           <varName>param1</varName>
-          <factType>Customer</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Converted from [&apos;Customer Profile&apos;]</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>customerSince</factField>
-          <fieldType>Date</fieldType>
-          <parameters/>
-          <varName>$default1</varName>
-          <factType>Customer</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Converted from [&apos;Customer Profile&apos;]</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>customerSince</factField>
-          <fieldType>Date</fieldType>
-          <parameters/>
-          <varName>$default</varName>
           <factType>Customer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
@@ -203,18 +155,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueDate>2017-01-10 23:00:00.0 UTC</valueDate>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueDate>2017-01-11 23:00:00.0 UTC</valueDate>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>product for newbie</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -235,16 +175,6 @@
       <value>
         <valueString>&quot;bronze&quot;, silver</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -271,16 +201,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>credit card</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -304,16 +224,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>holiday</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -334,16 +244,6 @@
       <value>
         <valueString>&quot;platinum&quot;</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
