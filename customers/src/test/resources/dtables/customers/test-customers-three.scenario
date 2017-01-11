@@ -26,7 +26,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>23</executionTimeResult>
+      <executionTimeResult>24</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -159,11 +159,35 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>1</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>customerId</fieldName>
+          <expected>3</expected>
+          <actualResult>2</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Offer] field [customerId] was [3].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>product</fieldName>
+          <expected>holiday</expected>
+          <actualResult>calendar</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Offer] field [product] was [holiday].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Offer</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-11 13:16:38.509 UTC</lastRunResult>
+  <lastRunResult>2017-01-11 13:17:58.780 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.customers</packageName>
