@@ -27,7 +27,7 @@
         </path>
       </pathHead>
       <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
-        <uri>default://7930d6ee1d11aa4b91ae91bd8dd409ed0821235c@testday/vacation/src/main/resources/dtables/vacation/extra-vacation.gdst</uri>
+        <uri>default://1f8c1866cd926e8b7f2181749c32b868cceaa64c@testday/vacation/src/main/resources/dtables/vacation/extra-vacation.gdst</uri>
         <fileName>extra-vacation.gdst</fileName>
         <hasVersionSupport>false</hasVersionSupport>
       </pathVersion>
