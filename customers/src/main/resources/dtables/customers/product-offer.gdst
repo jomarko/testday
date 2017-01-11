@@ -68,44 +68,7 @@
       <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
-  <actionCols>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>offer</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionInsertFact>
-          <fieldValues>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>customer</field>
-              <value>=$c</value>
-              <nature>2</nature>
-              <type>Customer</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>product</field>
-              <value>$default</value>
-              <nature>7</nature>
-              <type>String</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-          </fieldValues>
-          <factType>Offer</factType>
-          <isBound>false</isBound>
-        </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>offer</header>
-          <varName>$default</varName>
-          <fieldType>String</fieldType>
-          <factType>Offer</factType>
-          <factField>product</factField>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-  </actionCols>
+  <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
       <acceptedTypes>
@@ -167,11 +130,6 @@
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueString>product for newbie</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
     </list>
     <list>
       <value>
@@ -202,11 +160,6 @@
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueString>something better</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
     </list>
     <list>
       <value>
@@ -235,11 +188,6 @@
         <valueDate>2015-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
         <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>credit card</valueString>
-        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
