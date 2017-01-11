@@ -26,7 +26,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>140</executionTimeResult>
+      <executionTimeResult>39</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -90,7 +90,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>4</executionTimeResult>
+      <executionTimeResult>10</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -131,8 +131,63 @@
       <name>Offer</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <fact-data>
+      <type>Customer</type>
+      <fieldData>
+        <field-data>
+          <name>combinedBalance</name>
+          <value>0</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>customerSince</name>
+          <value>01-Jan-2013</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>id</name>
+          <value>3</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>profile</name>
+          <value>platinum</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$c3</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace>
+      <executionTimeResult>2</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>customerId</fieldName>
+          <expected>3</expected>
+          <actualResult>2</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Offer] field [customerId] was [2] expected [3].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>product</fieldName>
+          <expected>car</expected>
+          <actualResult>calendar</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Offer] field [product] was [calendar] expected [car].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Offer</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-11 13:08:56.983 UTC</lastRunResult>
+  <lastRunResult>2017-01-11 13:11:26.62 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.customers</packageName>
