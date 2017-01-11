@@ -47,7 +47,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>205</width>
           <header>Converted from [&apos;Customer Profile&apos;]</header>
           <constraintValueType>1</constraintValueType>
           <factField>profile</factField>
@@ -87,7 +87,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>251</width>
           <header>Converted from [&apos;Offer Product&apos;]</header>
           <varName>$default</varName>
           <fieldType>String</fieldType>
