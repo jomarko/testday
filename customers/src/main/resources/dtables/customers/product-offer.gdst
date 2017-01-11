@@ -46,21 +46,6 @@
           <operator>&gt;</operator>
           <parameters/>
         </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>DATE</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>171</width>
-          <header>customer since maxim</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>customerSince</factField>
-          <fieldType>Date</fieldType>
-          <operator>&lt;=</operator>
-          <parameters/>
-        </condition-column52>
       </conditions>
       <window>
         <operator></operator>
@@ -164,11 +149,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>calendar</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -193,12 +173,6 @@
       </value>
       <value>
         <valueDate>2015-12-31 23:00:00.0 UTC</valueDate>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueDate>2016-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
@@ -233,12 +207,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueDate>2016-11-30 23:00:00.0 UTC</valueDate>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>credit card</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -263,12 +231,6 @@
       </value>
       <value>
         <valueDate>2013-12-31 23:00:00.0 UTC</valueDate>
-        <valueString></valueString>
-        <dataType>DATE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueDate>2014-12-31 23:00:00.0 UTC</valueDate>
         <valueString></valueString>
         <dataType>DATE</dataType>
         <isOtherwise>false</isOtherwise>
