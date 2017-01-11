@@ -10,8 +10,108 @@
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
-  <conditionPatterns/>
-  <actionCols/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>Employee</factType>
+      <boundName>$e</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>there is employee</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
+          <operator>!= null</operator>
+          <parameters/>
+        </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+    <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryBRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>there is not vacation</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+          <type>not</type>
+          <patterns>
+            <org.drools.workbench.models.datamodel.rule.FactPattern>
+              <constraintList>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <operator>==</operator>
+                    <constraintValueType>6</constraintValueType>
+                    <expression>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                            <name>id</name>
+                            <classType>java.lang.Integer</classType>
+                            <genericType>Integer</genericType>
+                          </next>
+                          <name>$e</name>
+                          <classType>Employee</classType>
+                          <genericType>Employee</genericType>
+                          <factType>Employee</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Vacation</factType>
+                    <fieldName>employeeId</fieldName>
+                    <fieldType>Integer</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </constraintList>
+              <factType>Vacation</factType>
+              <isNegated>false</isNegated>
+              <window>
+                <parameters/>
+              </window>
+            </org.drools.workbench.models.datamodel.rule.FactPattern>
+          </patterns>
+        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+      </definition>
+      <childColumns/>
+    </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryBRLConditionColumn>
+  </conditionPatterns>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryBRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>create basic vacation</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.ActionInsertFact>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>days</field>
+              <value>22</value>
+              <nature>1</nature>
+              <type>Integer</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>employeeId</field>
+              <value>$e.id</value>
+              <nature>3</nature>
+              <type>Integer</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <factType>Vacation</factType>
+          <isBound>false</isBound>
+        </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
+      </definition>
+      <childColumns reference="../../../conditionPatterns/org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryBRLConditionColumn/childColumns"/>
+    </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryBRLActionColumn>
+  </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
       <acceptedTypes>
@@ -44,5 +144,37 @@
   </imports>
   <packageName>dtables.vacation</packageName>
   <tableFormat>LIMITED_ENTRY</tableFormat>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
