@@ -1,5 +1,5 @@
 <scenario>
-  <name>test-customers-two.scenario</name>
+  <name>test-customers-three.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -26,7 +26,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>35</executionTimeResult>
+      <executionTimeResult>140</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -72,7 +72,7 @@
       <fieldData>
         <field-data>
           <name>combinedBalance</name>
-          <value>0</value>
+          <value>125.3</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -90,7 +90,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>3</executionTimeResult>
+      <executionTimeResult>4</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -112,10 +112,19 @@
         <expect-field>
           <fieldName>customerId</fieldName>
           <expected>2</expected>
-          <actualResult>2</actualResult>
+          <actualResult>1</actualResult>
           <successResult>true</successResult>
-          <explanation>[Offer] field [customerId] was not [2].</explanation>
-          <operator>!=</operator>
+          <explanation>[Offer] field [customerId] was [2].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>product</fieldName>
+          <expected>calendar</expected>
+          <actualResult>mobile</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Offer] field [product] was [calendar].</explanation>
+          <operator>==</operator>
           <nature>1</nature>
         </expect-field>
       </fieldValues>
@@ -123,7 +132,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-11 11:46:08.692 UTC</lastRunResult>
+  <lastRunResult>2017-01-11 13:08:56.983 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.customers</packageName>
