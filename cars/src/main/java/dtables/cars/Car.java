@@ -11,6 +11,8 @@ public class Car implements java.io.Serializable
 
    private java.lang.String color;
 
+   private java.util.List<java.lang.Boolean> array;
+
    public Car()
    {
    }
@@ -25,9 +27,20 @@ public class Car implements java.io.Serializable
       this.color = color;
    }
 
-   public Car(java.lang.String color)
+   public java.util.List<java.lang.Boolean> getArray()
+   {
+      return this.array;
+   }
+
+   public void setArray(java.util.List<java.lang.Boolean> array)
+   {
+      this.array = array;
+   }
+
+   public Car(java.lang.String color, java.util.List<java.lang.Boolean> array)
    {
       this.color = color;
+      this.array = array;
    }
 
 }
