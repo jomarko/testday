@@ -11,6 +11,8 @@ public class D implements java.io.Serializable
 
    private int intf;
 
+   private java.lang.String prod;
+
    public D()
    {
    }
@@ -25,9 +27,20 @@ public class D implements java.io.Serializable
       this.intf = intf;
    }
 
-   public D(int intf)
+   public java.lang.String getProd()
+   {
+      return this.prod;
+   }
+
+   public void setProd(java.lang.String prod)
+   {
+      this.prod = prod;
+   }
+
+   public D(int intf, java.lang.String prod)
    {
       this.intf = intf;
+      this.prod = prod;
    }
 
 }
