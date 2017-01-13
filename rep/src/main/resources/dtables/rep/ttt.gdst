@@ -18,6 +18,30 @@
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <value>$default</value>
+                <operator>==</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>D</factType>
+                <fieldName>prod</fieldName>
+                <fieldType>String</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>D</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>accumulate( D( $att : intf); $avg : average($att) )</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
@@ -28,9 +52,11 @@
           <width>-1</width>
           <header>acc</header>
           <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
+          <factField>prod</factField>
+          <fieldType>String</fieldType>
           <parameters/>
-          <varName></varName>
+          <varName>$default</varName>
+          <factType>D</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -102,9 +128,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
