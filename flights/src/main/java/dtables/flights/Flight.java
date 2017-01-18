@@ -12,7 +12,6 @@ public class Flight implements java.io.Serializable
    private java.lang.String from;
    private java.lang.String to;
    private java.util.Date departure;
-   private java.util.Date arrival;
    private int capacity;
    private java.lang.String status;
 
@@ -50,16 +49,6 @@ public class Flight implements java.io.Serializable
       this.departure = departure;
    }
 
-   public java.util.Date getArrival()
-   {
-      return this.arrival;
-   }
-
-   public void setArrival(java.util.Date arrival)
-   {
-      this.arrival = arrival;
-   }
-
    public int getCapacity()
    {
       return this.capacity;
@@ -81,13 +70,11 @@ public class Flight implements java.io.Serializable
    }
 
    public Flight(java.lang.String from, java.lang.String to,
-         java.util.Date departure, java.util.Date arrival, int capacity,
-         java.lang.String status)
+         java.util.Date departure, int capacity, java.lang.String status)
    {
       this.from = from;
       this.to = to;
       this.departure = departure;
-      this.arrival = arrival;
       this.capacity = capacity;
       this.status = status;
    }
