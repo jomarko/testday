@@ -87,83 +87,272 @@
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <Pattern52>
-      <factType>Flight</factType>
-      <boundName>$altF</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>there is alternative flight</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <operator>&gt;</operator>
+                    <constraintValueType>6</constraintValueType>
+                    <expression>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                            <name>departure</name>
+                            <classType>java.util.Date</classType>
+                            <genericType>Date</genericType>
+                          </next>
+                          <name>$f</name>
+                          <classType>Flight</classType>
+                          <genericType>Flight</genericType>
+                          <factType>Flight</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Flight</factType>
+                    <fieldName>departure</fieldName>
+                    <fieldType>Date</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <operator>==</operator>
+                    <constraintValueType>6</constraintValueType>
+                    <expression>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                            <name>from</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>$f</name>
+                          <classType>Flight</classType>
+                          <genericType>Flight</genericType>
+                          <factType>Flight</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Flight</factType>
+                    <fieldName>from</fieldName>
+                    <fieldType>String</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <operator>==</operator>
+                    <constraintValueType>6</constraintValueType>
+                    <expression>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                            <name>to</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>$f</name>
+                          <classType>Flight</classType>
+                          <genericType>Flight</genericType>
+                          <factType>Flight</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Flight</factType>
+                    <fieldName>to</fieldName>
+                    <fieldType>String</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>scheduled</value>
+                    <operator>==</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Flight</factType>
+                    <fieldName>status</fieldName>
+                    <fieldType>String</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>Flight</factType>
+          <boundName>$altF</boundName>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>departure greater</header>
-          <constraintValueType>3</constraintValueType>
-          <factField>departure</factField>
-          <fieldType>Date</fieldType>
-          <operator>&gt;</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>is from</header>
-          <constraintValueType>3</constraintValueType>
-          <factField>from</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>is to</header>
-          <constraintValueType>3</constraintValueType>
-          <factField>to</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>has status</header>
+          <header>there is alternative flight</header>
           <constraintValueType>1</constraintValueType>
-          <factField>status</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
+          <fieldType>Boolean</fieldType>
           <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <operator></operator>
-        <parameters/>
-      </window>
-    </Pattern52>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>no appropriate flight</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+          <type>not</type>
+          <patterns>
+            <org.drools.workbench.models.datamodel.rule.FactPattern>
+              <constraintList>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                    <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                    <constraints>
+                      <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                        <operator>&gt;</operator>
+                        <constraintValueType>6</constraintValueType>
+                        <expression>
+                          <parts>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                              <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                                <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                                <name>departure</name>
+                                <classType>java.util.Date</classType>
+                                <genericType>Date</genericType>
+                              </next>
+                              <name>$f</name>
+                              <classType>Flight</classType>
+                              <genericType>Flight</genericType>
+                              <factType>Flight</factType>
+                            </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                          </parts>
+                          <index>2147483647</index>
+                        </expression>
+                        <parameters/>
+                        <factType>Flight</factType>
+                        <fieldName>departure</fieldName>
+                        <fieldType>Date</fieldType>
+                      </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                      <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                        <operator>==</operator>
+                        <constraintValueType>6</constraintValueType>
+                        <expression>
+                          <parts>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                              <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                                <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                                <name>from</name>
+                                <classType>java.lang.String</classType>
+                                <genericType>String</genericType>
+                              </next>
+                              <name>$f</name>
+                              <classType>Flight</classType>
+                              <genericType>Flight</genericType>
+                              <factType>Flight</factType>
+                            </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                          </parts>
+                          <index>2147483647</index>
+                        </expression>
+                        <parameters/>
+                        <factType>Flight</factType>
+                        <fieldName>from</fieldName>
+                        <fieldType>String</fieldType>
+                      </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                      <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                        <operator>==</operator>
+                        <constraintValueType>6</constraintValueType>
+                        <expression>
+                          <parts>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                              <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                                <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                                <name>to</name>
+                                <classType>java.lang.String</classType>
+                                <genericType>String</genericType>
+                              </next>
+                              <name>$f</name>
+                              <classType>Flight</classType>
+                              <genericType>Flight</genericType>
+                              <factType>Flight</factType>
+                            </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                          </parts>
+                          <index>2147483647</index>
+                        </expression>
+                        <parameters/>
+                        <factType>Flight</factType>
+                        <fieldName>to</fieldName>
+                        <fieldType>String</fieldType>
+                      </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                      <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                        <value>scheduled</value>
+                        <operator>==</operator>
+                        <constraintValueType>1</constraintValueType>
+                        <expression>
+                          <parts/>
+                          <index>2147483647</index>
+                        </expression>
+                        <parameters/>
+                        <factType>Flight</factType>
+                        <fieldName>status</fieldName>
+                        <fieldType>String</fieldType>
+                      </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    </constraints>
+                  </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                </constraints>
+              </constraintList>
+              <factType>Flight</factType>
+              <isNegated>false</isNegated>
+              <window>
+                <parameters/>
+              </window>
+            </org.drools.workbench.models.datamodel.rule.FactPattern>
+          </patterns>
+        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>no appropriate flight</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>rebook to flight</header>
+      <header>rebook</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
@@ -181,7 +370,34 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>rebook to flight</header>
+          <header>rebook</header>
+          <varName></varName>
+          <fieldType>Boolean</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>null flight</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.ActionSetField>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>flight</field>
+              <value>null</value>
+              <nature>1</nature>
+              <type>Flight</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <variable>$p</variable>
+        </org.drools.workbench.models.datamodel.rule.ActionSetField>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>null flight</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -246,23 +462,69 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$f.departure</valueString>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$f.from</valueString>
+        <valueString>canceled</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$f.to</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>scheduled</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
