@@ -48,6 +48,7 @@
         </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
@@ -69,11 +70,12 @@
           <factField>employeeId</factField>
           <fieldType>Integer</fieldType>
           <operator>==</operator>
-          <valueList>$e.id</valueList>
+          <valueList>e.id</valueList>
           <parameters/>
         </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
@@ -166,7 +168,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$e.id</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
