@@ -31,6 +31,21 @@
           <operator>&gt;</operator>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>sgt</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>yearsOfService</factField>
+          <fieldType>Integer</fieldType>
+          <operator>&gt;</operator>
+          <parameters/>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -86,6 +101,12 @@
       </value>
       <value>
         <valueNumeric class="int">60</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">30</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
