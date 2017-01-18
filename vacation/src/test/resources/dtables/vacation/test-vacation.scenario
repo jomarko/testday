@@ -381,7 +381,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>days</fieldName>
-          <expected>29</expected>
+          <expected>24</expected>
           <actualResult>30</actualResult>
           <successResult>false</successResult>
           <explanation>[Vacation] field [days] was [30] expected [29].</explanation>
