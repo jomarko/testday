@@ -150,12 +150,17 @@
       <name>$p</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>34</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f5</expected>
+          <successResult>true</successResult>
+          <explanation>[$p] field [flight] was [=$f5].</explanation>
           <operator>==</operator>
           <nature>2</nature>
         </expect-field>
@@ -164,6 +169,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-01-18 14:48:03.735 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
