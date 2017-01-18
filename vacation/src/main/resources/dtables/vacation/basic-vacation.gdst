@@ -144,6 +144,7 @@
   </imports>
   <packageName>dtables.vacation</packageName>
   <tableFormat>LIMITED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
   <data>
     <list>
       <value>
