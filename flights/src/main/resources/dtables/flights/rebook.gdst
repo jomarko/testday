@@ -52,18 +52,11 @@
                 <expression>
                   <parts>
                     <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                        <name>this</name>
-                        <classType>Flight</classType>
-                        <genericType>this</genericType>
-                      </next>
                       <name>$f</name>
                       <classType>Flight</classType>
                       <genericType>Flight</genericType>
                       <factType>Flight</factType>
                     </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
                   </parts>
                   <index>2147483647</index>
                 </expression>
