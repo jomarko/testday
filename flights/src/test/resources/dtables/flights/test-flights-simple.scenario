@@ -1,5 +1,5 @@
 <scenario>
-  <name>test-flights.scenario</name>
+  <name>test-flights-simple.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
