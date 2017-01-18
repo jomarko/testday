@@ -129,7 +129,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>131</width>
           <header>increase about 5 days</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
@@ -156,7 +156,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>119</width>
           <header>increase about 3 days</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
@@ -295,6 +295,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="int">60</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
