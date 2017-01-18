@@ -6,7 +6,7 @@
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -68,7 +68,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>225</width>
+          <width>182</width>
           <header>served maximum (exlusive)</header>
           <constraintValueType>1</constraintValueType>
           <factField>yearsOfService</factField>
@@ -156,7 +156,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>119</width>
+          <width>138</width>
           <header>increase about 3 days</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
@@ -183,7 +183,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>134</width>
           <header>increase about 2 days</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
