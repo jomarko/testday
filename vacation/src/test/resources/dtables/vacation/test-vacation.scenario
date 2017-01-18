@@ -26,7 +26,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>30</executionTimeResult>
+      <executionTimeResult>25</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -124,7 +124,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>1</executionTimeResult>
+      <executionTimeResult>0</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -132,6 +132,7 @@
         <expect-field>
           <fieldName>employeeId</fieldName>
           <expected>3</expected>
+          <actualResult>2</actualResult>
           <successResult>true</successResult>
           <explanation>[Vacation] field [employeeId] was [3].</explanation>
           <operator>==</operator>
@@ -140,6 +141,7 @@
         <expect-field>
           <fieldName>days</fieldName>
           <expected>27</expected>
+          <actualResult>22</actualResult>
           <successResult>true</successResult>
           <explanation>[Vacation] field [days] was [27].</explanation>
           <operator>==</operator>
@@ -172,7 +174,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>2</executionTimeResult>
+      <executionTimeResult>0</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -189,7 +191,7 @@
         <expect-field>
           <fieldName>employeeId</fieldName>
           <expected>4</expected>
-          <actualResult>1</actualResult>
+          <actualResult>3</actualResult>
           <successResult>true</successResult>
           <explanation>[Vacation] field [employeeId] was [4].</explanation>
           <operator>==</operator>
@@ -222,24 +224,24 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>1</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>days</fieldName>
-          <expected>30</expected>
-          <actualResult>32</actualResult>
-          <successResult>false</successResult>
-          <explanation>[Vacation] field [days] was [32] expected [30].</explanation>
+          <expected>27</expected>
+          <actualResult>27</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Vacation] field [days] was [27].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>employeeId</fieldName>
           <expected>5</expected>
-          <actualResult>1</actualResult>
+          <actualResult>2</actualResult>
           <successResult>true</successResult>
           <explanation>[Vacation] field [employeeId] was [5].</explanation>
           <operator>==</operator>
@@ -250,7 +252,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-11 15:11:50.272 UTC</lastRunResult>
+  <lastRunResult>2017-01-18 11:14:03.853 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.vacation</packageName>
