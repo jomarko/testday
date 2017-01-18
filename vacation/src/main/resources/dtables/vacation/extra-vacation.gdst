@@ -255,6 +255,7 @@
   </imports>
   <packageName>dtables.vacation</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
   <data>
     <list>
       <value>
