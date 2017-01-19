@@ -202,11 +202,14 @@
             <parameters/>
           </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>collect( Passenger( flight == $altF) )</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>137</width>
+          <width>-1</width>
           <header>there is alternative flight</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
