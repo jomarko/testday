@@ -56,7 +56,7 @@
               </constraints>
             </constraintList>
             <factType>Integer</factType>
-            <boundName>$n</boundName>
+            <boundName></boundName>
             <isNegated>false</isNegated>
             <window>
               <parameters/>
@@ -164,8 +164,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
