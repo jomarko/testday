@@ -436,6 +436,9 @@
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>java.lang.Number</type>
       </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.Integer</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
   <packageName>dtables.flights</packageName>
