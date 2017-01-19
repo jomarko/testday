@@ -26,6 +26,9 @@
           <value>canceled</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>capacity</name>
+        </field-data>
       </fieldData>
       <name>$f1</name>
       <isModify>false</isModify>
@@ -52,6 +55,9 @@
           <name>status</name>
           <value>scheduled</value>
           <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>capacity</name>
         </field-data>
       </fieldData>
       <name>$f2</name>
@@ -80,6 +86,9 @@
           <value>scheduled</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>capacity</name>
+        </field-data>
       </fieldData>
       <name>$f3</name>
       <isModify>false</isModify>
@@ -107,6 +116,9 @@
           <value>canceled</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>capacity</name>
+        </field-data>
       </fieldData>
       <name>$f4</name>
       <isModify>false</isModify>
@@ -132,6 +144,11 @@
         <field-data>
           <name>status</name>
           <value>scheduled</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>capacity</name>
+          <value>5</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -178,6 +195,9 @@
           <value>canceled</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>capacity</name>
+        </field-data>
       </fieldData>
       <name>$f6</name>
       <isModify>false</isModify>
@@ -197,8 +217,25 @@
       <name>$p2</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Passenger</type>
+      <fieldData>
+        <field-data>
+          <name>flight</name>
+          <value>=$f5</value>
+          <nature>2</nature>
+        </field-data>
+        <field-data>
+          <name>name</name>
+          <value>joe</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$p3</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>26</executionTimeResult>
+      <executionTimeResult>14</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -206,17 +243,19 @@
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f5</expected>
-          <actualResult>dtables.flights.Flight@6445bc57</actualResult>
+          <actualResult>dtables.flights.Flight@48dae487</actualResult>
           <successResult>false</successResult>
-          <explanation>[$p] field [flight] was [dtables.flights.Flight@6445bc57] expected [=$f5].</explanation>
+          <explanation>[$p] field [flight] was [dtables.flights.Flight@48dae487] expected [=$f5].</explanation>
           <operator>==</operator>
           <nature>2</nature>
         </expect-field>
         <expect-field>
           <fieldName>name</fieldName>
           <expected>john</expected>
+          <successResult>true</successResult>
+          <explanation>[$p] field [name] was [john].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$p</name>
@@ -277,7 +316,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 11:42:22.908 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 11:46:44.274 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
