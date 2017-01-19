@@ -234,9 +234,24 @@
       <name>$p3</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Passenger</type>
+      <fieldData>
+        <field-data>
+          <name>flight</name>
+          <value>=$f1</value>
+          <nature>2</nature>
+        </field-data>
+        <field-data>
+          <name>name</name>
+        </field-data>
+      </fieldData>
+      <name>$p4</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>13</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>47</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -281,36 +296,48 @@
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f1</expected>
+          <successResult>true</successResult>
+          <explanation>[$p3] field [flight] was not [=$f1].</explanation>
           <operator>!=</operator>
           <nature>2</nature>
         </expect-field>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f2</expected>
+          <successResult>true</successResult>
+          <explanation>[$p3] field [flight] was not [=$f2].</explanation>
           <operator>!=</operator>
           <nature>2</nature>
         </expect-field>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f3</expected>
+          <successResult>true</successResult>
+          <explanation>[$p3] field [flight] was not [=$f3].</explanation>
           <operator>!=</operator>
           <nature>2</nature>
         </expect-field>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f4</expected>
+          <successResult>true</successResult>
+          <explanation>[$p3] field [flight] was not [=$f4].</explanation>
           <operator>!=</operator>
           <nature>2</nature>
         </expect-field>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f5</expected>
+          <successResult>true</successResult>
+          <explanation>[$p3] field [flight] was not [=$f5].</explanation>
           <operator>!=</operator>
           <nature>2</nature>
         </expect-field>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f6</expected>
+          <successResult>true</successResult>
+          <explanation>[$p3] field [flight] was not [=$f6].</explanation>
           <operator>!=</operator>
           <nature>2</nature>
         </expect-field>
@@ -318,8 +345,64 @@
       <name>$p3</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f1</expected>
+          <actualResult>dtables.flights.Flight@6fcc1cbc</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$p4] field [flight] was not expected to be [dtables.flights.Flight@6fcc1cbc].</explanation>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f2</expected>
+          <successResult>true</successResult>
+          <explanation>[$p4] field [flight] was not [=$f2].</explanation>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f3</expected>
+          <successResult>true</successResult>
+          <explanation>[$p4] field [flight] was not [=$f3].</explanation>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f4</expected>
+          <successResult>true</successResult>
+          <explanation>[$p4] field [flight] was not [=$f4].</explanation>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f5</expected>
+          <successResult>true</successResult>
+          <explanation>[$p4] field [flight] was not [=$f5].</explanation>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f6</expected>
+          <actualResult>dtables.flights.Flight@7a75e8e2</actualResult>
+          <successResult>true</successResult>
+          <explanation>[$p4] field [flight] was not [=$f6].</explanation>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$p4</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 13:48:47.22 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 13:58:58.222 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
