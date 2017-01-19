@@ -22,19 +22,37 @@
           <factPattern>
             <constraintList>
               <constraints>
-                <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                   <value>$default</value>
-                  <operator>==</operator>
+                  <operator>&lt;</operator>
                   <constraintValueType>7</constraintValueType>
                   <expression>
                     <parts/>
                     <index>2147483647</index>
                   </expression>
                   <parameters/>
-                  <factType>Integer</factType>
-                  <fieldName>this</fieldName>
-                  <fieldType>this</fieldType>
-                </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <fieldName>intValue</fieldName>
+                  <fieldType>int</fieldType>
+                  <expLeftSide>
+                    <parts>
+                      <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionMethod">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                          <name>intValue</name>
+                          <classType>int</classType>
+                          <genericType>Integer</genericType>
+                          <params/>
+                        </next>
+                        <name>Integer</name>
+                        <classType>Integer</classType>
+                        <genericType>Integer</genericType>
+                        <factType>Integer</factType>
+                      </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <org.drools.workbench.models.datamodel.rule.ExpressionMethod reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    </parts>
+                    <index>2147483647</index>
+                  </expLeftSide>
+                </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
               </constraints>
             </constraintList>
             <factType>Integer</factType>
@@ -65,8 +83,8 @@
           <width>-1</width>
           <header>there is number of passengers</header>
           <constraintValueType>1</constraintValueType>
-          <factField>this</factField>
-          <fieldType>this</fieldType>
+          <factField>intValue</factField>
+          <fieldType>Integer</fieldType>
           <parameters/>
           <varName>$default</varName>
           <factType>Integer</factType>
@@ -146,7 +164,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
