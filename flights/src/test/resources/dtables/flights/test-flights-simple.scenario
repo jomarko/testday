@@ -148,7 +148,7 @@
         </field-data>
         <field-data>
           <name>capacity</name>
-          <value>2</value>
+          <value>0</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -218,7 +218,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>37</executionTimeResult>
+      <executionTimeResult>19</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -299,7 +299,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 13:24:40.381 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 13:25:06.505 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
