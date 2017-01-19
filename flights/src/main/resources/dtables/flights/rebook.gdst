@@ -428,7 +428,7 @@
       <width>-1</width>
       <header>rebook</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionSetField>
+        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>flight</field>
@@ -438,7 +438,7 @@
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
           <variable>$p</variable>
-        </org.drools.workbench.models.datamodel.rule.ActionSetField>
+        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
