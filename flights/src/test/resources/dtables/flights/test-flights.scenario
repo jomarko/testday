@@ -219,8 +219,23 @@
       <name>$p2</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Passenger</type>
+      <fieldData>
+        <field-data>
+          <name>flight</name>
+          <value>=$f4</value>
+          <nature>2</nature>
+        </field-data>
+        <field-data>
+          <name>name</name>
+        </field-data>
+      </fieldData>
+      <name>$p3</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>22</executionTimeResult>
+      <executionTimeResult>13</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -261,8 +276,50 @@
       <name>$p2</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f1</expected>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f2</expected>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f3</expected>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f4</expected>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f5</expected>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>flight</fieldName>
+          <expected>=$f6</expected>
+          <operator>!=</operator>
+          <nature>2</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$p3</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 13:41:51.664 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 13:48:47.22 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
