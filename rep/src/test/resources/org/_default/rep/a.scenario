@@ -1,13 +1,26 @@
 <scenario>
-  <name>a</name>
+  <name>a.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <execution-trace>
+      <executionTimeResult>14</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues/>
+      <name>Person</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
+  <lastRunResult>2017-01-19 10:15:56.573 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org._default.rep</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
