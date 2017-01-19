@@ -10,7 +10,6 @@ public class Passenger implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    private java.lang.String name;
-   private java.lang.String status;
    private dtables.flights.Flight flight;
 
    public Passenger()
@@ -27,16 +26,6 @@ public class Passenger implements java.io.Serializable
       this.name = name;
    }
 
-   public java.lang.String getStatus()
-   {
-      return this.status;
-   }
-
-   public void setStatus(java.lang.String status)
-   {
-      this.status = status;
-   }
-
    public dtables.flights.Flight getFlight()
    {
       return this.flight;
@@ -47,11 +36,9 @@ public class Passenger implements java.io.Serializable
       this.flight = flight;
    }
 
-   public Passenger(java.lang.String name, java.lang.String status,
-         dtables.flights.Flight flight)
+   public Passenger(java.lang.String name, dtables.flights.Flight flight)
    {
       this.name = name;
-      this.status = status;
       this.flight = flight;
    }
 
