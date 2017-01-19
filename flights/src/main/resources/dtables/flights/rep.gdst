@@ -20,6 +20,23 @@
       <definition>
         <org.drools.workbench.models.datamodel.rule.FromAccumulateCompositeFactPattern>
           <factPattern>
+            <constraintList>
+              <constraints>
+                <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <value>$default</value>
+                  <operator>==</operator>
+                  <constraintValueType>7</constraintValueType>
+                  <expression>
+                    <parts/>
+                    <index>2147483647</index>
+                  </expression>
+                  <parameters/>
+                  <factType>Integer</factType>
+                  <fieldName>this</fieldName>
+                  <fieldType>this</fieldType>
+                </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+              </constraints>
+            </constraintList>
             <factType>Integer</factType>
             <boundName>$n</boundName>
             <isNegated>false</isNegated>
@@ -48,9 +65,11 @@
           <width>-1</width>
           <header>there is number of passengers</header>
           <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
           <parameters/>
-          <varName></varName>
+          <varName>$default</varName>
+          <factType>Integer</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -127,9 +146,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
