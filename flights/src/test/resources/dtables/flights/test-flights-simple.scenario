@@ -217,26 +217,9 @@
       <name>$p2</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>Passenger</type>
-      <fieldData>
-        <field-data>
-          <name>flight</name>
-          <value>=$f5</value>
-          <nature>2</nature>
-        </field-data>
-        <field-data>
-          <name>name</name>
-          <value>joe</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>$p3</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
-      <executionTimeResult>15</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>37</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -316,7 +299,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 11:54:45.962 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 13:24:40.381 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
