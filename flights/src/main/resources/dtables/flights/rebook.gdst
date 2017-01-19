@@ -203,7 +203,7 @@
           </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>ArrayList() from collect(Person(flight==$altF))</text>
+          <text>collect(Person(flight==$altF))</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
