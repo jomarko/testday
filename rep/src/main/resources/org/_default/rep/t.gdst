@@ -54,26 +54,6 @@
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <Pattern52>
-      <factType>Person</factType>
-      <boundName>$p</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>there is person</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>this</factField>
-          <fieldType>this</fieldType>
-          <operator>!= null</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <parameters/>
-      </window>
-    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <insert-fact-column52>
@@ -140,12 +120,6 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
