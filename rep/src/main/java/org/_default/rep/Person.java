@@ -9,25 +9,25 @@ public class Person implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private java.lang.String s;
+   private java.lang.String name;
 
    public Person()
    {
    }
 
-   public java.lang.String getS()
+   public java.lang.String getName()
    {
-      return this.s;
+      return this.name;
    }
 
-   public void setS(java.lang.String s)
+   public void setName(java.lang.String name)
    {
-      this.s = s;
+      this.name = name;
    }
 
-   public Person(java.lang.String s)
+   public Person(java.lang.String name)
    {
-      this.s = s;
+      this.name = name;
    }
 
 }
