@@ -4,16 +4,26 @@
   <globals/>
   <fixtures>
     <execution-trace>
-      <executionTimeResult>14</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
-      <fieldValues/>
+      <fieldValues>
+        <expect-field>
+          <fieldName>s</fieldName>
+          <expected>a</expected>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [Person] was not found in the results.</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
       <name>Person</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 10:15:56.573 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 10:24:59.781 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org._default.rep</packageName>
