@@ -432,7 +432,11 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.Number</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>dtables.flights</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
