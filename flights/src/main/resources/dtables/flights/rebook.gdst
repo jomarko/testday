@@ -23,7 +23,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>148</width>
           <header>flight with status</header>
           <constraintValueType>1</constraintValueType>
           <factField>status</factField>
@@ -78,7 +78,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>194</width>
           <header>passenger from canceled</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
@@ -206,7 +206,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>137</width>
           <header>there is alternative flight</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
@@ -338,7 +338,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>137</width>
           <header>no appropriate flight</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
