@@ -202,6 +202,80 @@
             <parameters/>
           </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
+        <org.drools.workbench.models.datamodel.rule.FromAccumulateCompositeFactPattern>
+          <factPattern>
+            <constraintList>
+              <constraints>
+                <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <value>$altF.capacity</value>
+                  <operator>&gt;</operator>
+                  <constraintValueType>3</constraintValueType>
+                  <expression>
+                    <parts/>
+                    <index>2147483647</index>
+                  </expression>
+                  <parameters/>
+                  <fieldName>intValue</fieldName>
+                  <fieldType>int</fieldType>
+                  <expLeftSide>
+                    <parts>
+                      <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionMethod">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                          <name>intValue</name>
+                          <classType>int</classType>
+                          <genericType>Integer</genericType>
+                          <params/>
+                        </next>
+                        <name>Integer</name>
+                        <classType>Integer</classType>
+                        <genericType>Integer</genericType>
+                        <factType>Integer</factType>
+                      </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <org.drools.workbench.models.datamodel.rule.ExpressionMethod reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    </parts>
+                    <index>2147483647</index>
+                  </expLeftSide>
+                </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              </constraints>
+            </constraintList>
+            <factType>Integer</factType>
+            <isNegated>false</isNegated>
+            <window>
+              <parameters/>
+            </window>
+          </factPattern>
+          <expression>
+            <parts/>
+            <index>2147483647</index>
+          </expression>
+          <sourcePattern class="org.drools.workbench.models.datamodel.rule.FactPattern">
+            <constraintList>
+              <constraints>
+                <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <value>$altF</value>
+                  <operator>==</operator>
+                  <constraintValueType>2</constraintValueType>
+                  <expression>
+                    <parts/>
+                    <index>2147483647</index>
+                  </expression>
+                  <parameters/>
+                  <factType>Passenger</factType>
+                  <fieldName>flight</fieldName>
+                  <fieldType>Flight</fieldType>
+                </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+              </constraints>
+            </constraintList>
+            <factType>Passenger</factType>
+            <boundName>$pass</boundName>
+            <isNegated>false</isNegated>
+            <window>
+              <parameters/>
+            </window>
+          </sourcePattern>
+          <function>count($pass)</function>
+        </org.drools.workbench.models.datamodel.rule.FromAccumulateCompositeFactPattern>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
