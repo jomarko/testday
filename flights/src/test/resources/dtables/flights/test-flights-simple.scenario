@@ -148,7 +148,7 @@
         </field-data>
         <field-data>
           <name>capacity</name>
-          <value>5</value>
+          <value>2</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -235,17 +235,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>14</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f5</expected>
-          <actualResult>dtables.flights.Flight@48dae487</actualResult>
-          <successResult>false</successResult>
-          <explanation>[$p] field [flight] was [dtables.flights.Flight@48dae487] expected [=$f5].</explanation>
+          <actualResult>dtables.flights.Flight@17671edd</actualResult>
+          <successResult>true</successResult>
+          <explanation>[$p] field [flight] was [=$f5].</explanation>
           <operator>==</operator>
           <nature>2</nature>
         </expect-field>
@@ -316,7 +316,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-19 11:46:44.274 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 11:54:45.962 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
