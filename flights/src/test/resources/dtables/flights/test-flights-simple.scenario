@@ -217,6 +217,21 @@
       <name>$p2</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Passenger</type>
+      <fieldData>
+        <field-data>
+          <name>flight</name>
+          <value>=$f5</value>
+          <nature>2</nature>
+        </field-data>
+        <field-data>
+          <name>name</name>
+        </field-data>
+      </fieldData>
+      <name>$p3</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
       <executionTimeResult>16</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
