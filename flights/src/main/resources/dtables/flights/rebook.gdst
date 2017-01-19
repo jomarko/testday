@@ -208,7 +208,7 @@
               <constraints>
                 <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                   <value>$altF.capacity</value>
-                  <operator>&gt;</operator>
+                  <operator>&lt;</operator>
                   <constraintValueType>3</constraintValueType>
                   <expression>
                     <parts/>
