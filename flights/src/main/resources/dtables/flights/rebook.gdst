@@ -241,6 +241,43 @@
           </sourcePattern>
           <function>count($capacity)</function>
         </org.drools.workbench.models.datamodel.rule.FromAccumulateCompositeFactPattern>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <value>$altF</value>
+                <operator>==</operator>
+                <constraintValueType>2</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>Flight</factType>
+                <fieldName>this</fieldName>
+                <fieldType>this</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <value>$capacity</value>
+                <operator>&gt;</operator>
+                <constraintValueType>3</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>Flight</factType>
+                <fieldName>capacity</fieldName>
+                <fieldType>Integer</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>Flight</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
