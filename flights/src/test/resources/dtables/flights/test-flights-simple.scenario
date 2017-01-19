@@ -146,6 +146,11 @@
           <value>=$f1</value>
           <nature>2</nature>
         </field-data>
+        <field-data>
+          <name>name</name>
+          <value>john</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>$p</name>
       <isModify>false</isModify>
@@ -185,23 +190,33 @@
           <value>=$f6</value>
           <nature>2</nature>
         </field-data>
+        <field-data>
+          <name>name</name>
+        </field-data>
       </fieldData>
       <name>$p2</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>15</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>26</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>flight</fieldName>
           <expected>=$f5</expected>
-          <successResult>true</successResult>
-          <explanation>[$p] field [flight] was [=$f5].</explanation>
+          <actualResult>dtables.flights.Flight@6445bc57</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$p] field [flight] was [dtables.flights.Flight@6445bc57] expected [=$f5].</explanation>
           <operator>==</operator>
           <nature>2</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>name</fieldName>
+          <expected>john</expected>
+          <operator>==</operator>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>$p</name>
@@ -262,7 +277,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-01-18 15:17:07.433 UTC</lastRunResult>
+  <lastRunResult>2017-01-19 11:42:22.908 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>dtables.flights</packageName>
