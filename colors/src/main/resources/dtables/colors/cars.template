@@ -104,19 +104,19 @@
         <string>green</string>
         <string>blue</string>
         <string>red</string>
-        <string></string>
-        <string></string>
+        <string>DB</string>
+        <string>yellow</string>
       </list>
     </entry>
     <entry>
       <string>$price</string>
       <list>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
+        <string>10000</string>
+        <string>12345</string>
+        <string>3125</string>
+        <string>0</string>
+        <string>1.1</string>
+        <string>2</string>
       </list>
     </entry>
     <entry>
