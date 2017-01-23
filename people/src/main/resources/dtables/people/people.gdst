@@ -23,7 +23,24 @@
           <definition>There is a human from &quot;{city}&quot;</definition>
           <values>
             <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
-              <value>abc</value>
+              <value>aCko</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+          </values>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>and</drl>
+          <definition>And</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>Human(city==&quot;{city}&quot;)</drl>
+          <definition>There is a human from &quot;{city}&quot;</definition>
+          <values>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>bCko</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>city</value>
             </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
           </values>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
