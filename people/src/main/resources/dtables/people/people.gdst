@@ -23,7 +23,7 @@
           <definition>There is a human from &quot;{city}&quot;</definition>
           <values>
             <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
-              <value>city</value>
+              <value>abc</value>
             </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
           </values>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
@@ -89,7 +89,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
