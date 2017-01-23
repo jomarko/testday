@@ -111,12 +111,12 @@
     <entry>
       <string>$price</string>
       <list>
-        <string>10000</string>
-        <string>12345</string>
-        <string>3125</string>
-        <string>0</string>
-        <string>1.1</string>
-        <string>2</string>
+        <string>1111.11</string>
+        <string>2222.22</string>
+        <string>3333.33</string>
+        <string>4444.44</string>
+        <string>5555.55</string>
+        <string>6666.66</string>
       </list>
     </entry>
     <entry>
