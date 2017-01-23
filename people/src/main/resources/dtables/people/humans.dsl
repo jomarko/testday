@@ -1,1 +1,1 @@
-[when]There is a human from "{city}"
+[when]There is a human from "{city}"= Human ( city == "{city}")
