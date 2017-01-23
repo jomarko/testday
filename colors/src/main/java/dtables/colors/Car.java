@@ -13,6 +13,8 @@ public class Car implements java.io.Serializable
    private java.lang.String doorColor;
    private java.lang.String hoodColor;
 
+   private java.math.BigDecimal price;
+
    public Car()
    {
    }
@@ -47,12 +49,23 @@ public class Car implements java.io.Serializable
       this.hoodColor = hoodColor;
    }
 
+   public java.math.BigDecimal getPrice()
+   {
+      return this.price;
+   }
+
+   public void setPrice(java.math.BigDecimal price)
+   {
+      this.price = price;
+   }
+
    public Car(java.lang.String roofColor, java.lang.String doorColor,
-         java.lang.String hoodColor)
+         java.lang.String hoodColor, java.math.BigDecimal price)
    {
       this.roofColor = roofColor;
       this.doorColor = doorColor;
       this.hoodColor = hoodColor;
+      this.price = price;
    }
 
 }
