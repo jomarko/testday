@@ -13,6 +13,8 @@ public class Human implements java.io.Serializable
    private java.lang.Integer age;
    private java.lang.Boolean employed;
 
+   private java.lang.String name;
+
    public Human()
    {
    }
@@ -47,12 +49,23 @@ public class Human implements java.io.Serializable
       this.employed = employed;
    }
 
+   public java.lang.String getName()
+   {
+      return this.name;
+   }
+
+   public void setName(java.lang.String name)
+   {
+      this.name = name;
+   }
+
    public Human(java.lang.String city, java.lang.Integer age,
-         java.lang.Boolean employed)
+         java.lang.Boolean employed, java.lang.String name)
    {
       this.city = city;
       this.age = age;
       this.employed = employed;
+      this.name = name;
    }
 
 }
