@@ -92,9 +92,9 @@
         <null/>
         <string></string>
         <string></string>
+        <string>black</string>
         <string></string>
-        <string></string>
-        <string></string>
+        <string>orange</string>
       </list>
     </entry>
     <entry>
@@ -126,7 +126,7 @@
         <string></string>
         <string></string>
         <string></string>
-        <string></string>
+        <string>white</string>
         <string></string>
       </list>
     </entry>
