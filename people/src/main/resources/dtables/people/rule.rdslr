@@ -5,7 +5,8 @@ import java.lang.Number;
 rule "rule"
 	dialect "mvel"
 	when
-		>Human(city=="trnava") && Human(city=="malacky")
+		>Human(city=="trnava") 
+		>Human(city=="malacky")
 	then
 		>System.out.println("zapad");
 end
