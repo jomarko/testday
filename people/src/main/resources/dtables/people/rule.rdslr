@@ -6,7 +6,6 @@ rule "rule"
 	dialect "mvel"
 	when
 		There is a human from "malacky"
-		And
 		There is a human from "trnava"
 	then
 		>System.out.println("zahoraci");
