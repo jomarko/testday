@@ -8,5 +8,5 @@ rule "rule"
 		>Human(city=="trnava") 
 		>Human(city=="malacky")
 	then
-		>System.out.println("zapad");
+		>System.out.println("zapad")
 end
