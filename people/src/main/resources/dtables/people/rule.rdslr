@@ -1,0 +1,9 @@
+package dtables.people;
+
+import java.lang.Number;
+
+rule "rule"
+	dialect "mvel"
+	when
+	then
+end
