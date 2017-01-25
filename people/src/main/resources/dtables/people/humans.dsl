@@ -16,8 +16,6 @@
 [when]is greater than or equal to=>=
 [when]is greater than=>
 [when]equals===
-[when]or=||
-[when]and=&&
 
 # actions
 [then]Log "{message}"=System.out.println("{message}");
