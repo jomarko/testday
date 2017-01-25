@@ -10,7 +10,51 @@
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
-  <conditionPatterns/>
+  <conditionPatterns>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>there is employed adult from london</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>Human(age &gt;= {age}, city==&quot;{city}&quot;)</drl>
+          <definition>Human is at least {age} years old and lives in &quot;{city}&quot;</definition>
+          <values>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>18</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>London</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>age</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>city</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+          </values>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>employed==true</drl>
+          <definition>- is employed</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>there is employed adult from london</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+  </conditionPatterns>
   <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -45,5 +89,25 @@
   <packageName>dtables.people</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
