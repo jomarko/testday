@@ -7,7 +7,7 @@
 
 # field restrictions
 [when]- {field:\w*} {operator} {value:\d*}={field} {operator} {value}
-[when]- is_employed=employed==false
+[when]- is employed=employed==true
 [when]- is adult=age>18
 
 # operators
