@@ -19,3 +19,4 @@
 
 # actions
 [then]Log "{message}"=System.out.println("{message}");
+[then]update {entity}=modify( ${entity!lc} )\{ \}
