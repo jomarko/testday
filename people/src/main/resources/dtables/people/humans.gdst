@@ -46,6 +46,64 @@
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>too old employee</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>$h:Human()</drl>
+          <definition>There is a Human</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>employed==true</drl>
+          <definition>- is employed</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>{field}  {operator}  {value}</drl>
+          <definition>- {field:\w*}  {operator}  {value:\d*}</definition>
+          <values>
+            <org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+              <value>age</value>
+              <id>\w*</id>
+            </org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>&gt;</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+              <value>70</value>
+              <id>\d*</id>
+            </org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+              <value>field</value>
+              <id>\w*</id>
+            </org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>operator</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+              <value>value</value>
+              <id>\d*</id>
+            </org.drools.workbench.models.datamodel.rule.DSLComplexVariableValue>
+          </values>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>too old employee</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -121,6 +179,43 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
