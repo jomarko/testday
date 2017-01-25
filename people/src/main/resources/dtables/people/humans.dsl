@@ -1,9 +1,9 @@
 # fact restrictions
-[when]There is a human with name "{name}"=Human(name=="{name}")
-[when]Human is at least {age} years old and lives in "{city}"=Human(age >= {age}, city=="{city}")
-[when]Human lives in "{city}"=Human(city=="{city}")
-[when]Human is employed=Human(employed==true)
-[when]There is a Human=Human()
+[when]There is a human($h) with name "{name}"=$h:Human(name=="{name}")
+[when]Human($h) is at least {age} years old and lives in "{city}"=$h:Human(age >= {age}, city=="{city}")
+[when]Human($h) lives in "{city}"=$h:Human(city=="{city}")
+[when]Human($h) is employed=$h:Human(employed==true)
+[when]There is a Human($h)=$h:Human()
 
 # field restrictions
 [when]- {field:\w*} {operator} {value:\d*}={field} {operator} {value}
@@ -19,4 +19,4 @@
 
 # actions
 [then]Log "{message}"=System.out.println("{message}");
-[then]update {entity}=modify( ${entity!lc} )\{ \}
+[then]Remove human {entity}=modify( {entity!lc} )\{ \}
