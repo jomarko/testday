@@ -9,7 +9,7 @@
 [when]- {field:\w*} {operator} {value:\d*}={field} {operator} {value}
 [when]- is employed=employed==true
 [when]- is adult=age>=18
-[when]- is not adult=age>18
+[when]- is not adult=age<18
 
 # operators
 [when]is less than or equal to=<=
