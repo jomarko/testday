@@ -24,13 +24,13 @@
           <values/>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
         <org.drools.workbench.models.datamodel.rule.DSLSentence>
-          <drl>employed==false</drl>
-          <definition>- is_employed</definition>
+          <drl>age&gt;18</drl>
+          <definition>- is adult</definition>
           <values/>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
         <org.drools.workbench.models.datamodel.rule.DSLSentence>
-          <drl>age&gt;18</drl>
-          <definition>- is adult</definition>
+          <drl>employed==true</drl>
+          <definition>- is employed</definition>
           <values/>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
       </definition>
