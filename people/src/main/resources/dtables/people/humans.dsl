@@ -21,4 +21,4 @@
 # actions
 [then]Log "{message}"=System.out.println("{message}");
 [then]Remove human {entity}=retract( {entity} )
-[then]Unemploy human {human}={human}.setEmployed(false)
+[then]Unemploy human {human}={human}.setEmployed(false);
