@@ -19,4 +19,4 @@
 
 # actions
 [then]Log "{message}"=System.out.println("{message}");
-[then]Remove human {entity}=modify( {entity!lc} )\{ \}
+[then]Remove human {entity}=retract( {entity} )
