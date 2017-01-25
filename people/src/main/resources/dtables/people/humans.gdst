@@ -17,7 +17,23 @@
       <header>employed child</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
-      <definition/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>$h:Human()</drl>
+          <definition>There is a Human</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>employed==true</drl>
+          <definition>- is employed</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>age&lt;18</drl>
+          <definition>- is not adult</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+      </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
@@ -31,7 +47,36 @@
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
-  <actionCols/>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>unemploy human</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>{human}.setEmployed(false)</drl>
+          <definition>Unemploy human {human}</definition>
+          <values>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>$h</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>human</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+          </values>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>unemploy human</header>
+          <varName></varName>
+          <fieldType>Boolean</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+  </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
       <acceptedTypes>
@@ -65,5 +110,31 @@
   <packageName>dtables.people</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
