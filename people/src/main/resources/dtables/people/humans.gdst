@@ -54,11 +54,14 @@
       <header>log an employed adult</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.DSLSentence>
-          <drl>System.out.println(&quot;{message}&quot;);</drl>
-          <definition>Log &quot;{message}&quot;</definition>
+          <drl>modify( {entity!lc} )\{ \}</drl>
+          <definition>Remove human {entity}</definition>
           <values>
             <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
-              <value>an employed adult</value>
+              <value>$h</value>
+            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
+              <value>entity</value>
             </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
           </values>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
