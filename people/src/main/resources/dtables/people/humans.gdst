@@ -58,10 +58,7 @@
           <definition>Log &quot;{message}&quot;</definition>
           <values>
             <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
-              <value>there is an amployed adult</value>
-            </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
-            <org.drools.workbench.models.datamodel.rule.DSLVariableValue>
-              <value>message</value>
+              <value>an employed adult</value>
             </org.drools.workbench.models.datamodel.rule.DSLVariableValue>
           </values>
         </org.drools.workbench.models.datamodel.rule.DSLSentence>
@@ -69,7 +66,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>175</width>
+          <width>-1</width>
           <header>log an employed adult</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
