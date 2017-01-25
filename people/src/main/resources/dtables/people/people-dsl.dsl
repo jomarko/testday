@@ -3,7 +3,7 @@
 [when]Human is at least {age} years old and lives in "{city}"=$h:Human(age >= {age}, city=="{city}")
 [when]Human lives in "{city}"=$h:Human(city=="{city}")
 [when]Human is employed=$h:Human(employed==true)
-[when]There is a Human=$h:Human()
+[when]There is a Human=$h : Human()
 
 # field restrictions
 [when]- {field:\w*} {operator} {value:\w*}={field} {operator} {value}
