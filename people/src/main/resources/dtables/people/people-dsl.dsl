@@ -6,7 +6,7 @@
 [when]There is a Human=$h:Human()
 
 # field restrictions
-[when]- {field:\w*} {operator} {value:\d*}={field} {operator} {value}
+[when]- {field:\w*} {operator} {value:\w*}={field} {operator} {value}
 [when]- is employed=employed==true
 [when]- is adult=age>=18
 [when]- is not adult=age<18
