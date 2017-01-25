@@ -105,6 +105,28 @@
       <name>$h5</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Human</type>
+      <fieldData>
+        <field-data>
+          <name>age</name>
+          <value>41</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>employed</name>
+          <value>false</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>city</name>
+          <value>Berlin</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$h6</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
       <executionTimeResult>1</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
@@ -178,10 +200,34 @@
           <fieldName>city</fieldName>
           <expected>Barcelona</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$h5</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>age</fieldName>
+          <expected>41</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>city</fieldName>
+          <expected>Berlin</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>employed</fieldName>
+          <expected>false</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$h6</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
