@@ -11,86 +11,38 @@
   <metadataCols/>
   <attributeCols/>
   <conditionPatterns>
-    <Pattern52>
-      <factType>Human</factType>
-      <boundName>$h2</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>there is strange car</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <factType>Human</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+        <org.drools.workbench.models.datamodel.rule.DSLSentence>
+          <drl>Human(employed==true)</drl>
+          <definition>Human is employed</definition>
+          <values/>
+        </org.drools.workbench.models.datamodel.rule.DSLSentence>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>aet2</header>
+          <header>there is strange car</header>
           <constraintValueType>1</constraintValueType>
-          <factField>name</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
+          <fieldType>Boolean</fieldType>
           <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>net2</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>name</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <parameters/>
-      </window>
-    </Pattern52>
-    <Pattern52>
-      <factType>Human</factType>
-      <boundName>$h</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>net</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>name</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_INTEGER</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>aet</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>age</factField>
-          <fieldType>Integer</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <parameters/>
-      </window>
-    </Pattern52>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols/>
   <auditLog>
@@ -140,24 +92,28 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>ad</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+    </list>
+    <list>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>aa</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">12</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
