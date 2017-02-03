@@ -6,12 +6,23 @@ package dtables.bonus_program;
 
 public class Employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Employee() {
-    }
+	private java.lang.Integer yearsOfService;
 
+	public Employee() {
+	}
 
+	public java.lang.Integer getYearsOfService() {
+		return this.yearsOfService;
+	}
 
+	public void setYearsOfService(java.lang.Integer yearsOfService) {
+		this.yearsOfService = yearsOfService;
+	}
+
+	public Employee(java.lang.Integer yearsOfService) {
+		this.yearsOfService = yearsOfService;
+	}
 
 }
