@@ -6,12 +6,34 @@ package dtables.bonus_program;
 
 public class Bonus implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Bonus() {
-    }
+	private java.lang.Double amount;
+	private dtables.bonus_program.Employee employee;
 
+	public Bonus() {
+	}
 
+	public java.lang.Double getAmount() {
+		return this.amount;
+	}
 
+	public void setAmount(java.lang.Double amount) {
+		this.amount = amount;
+	}
+
+	public dtables.bonus_program.Employee getEmployee() {
+		return this.employee;
+	}
+
+	public void setEmployee(dtables.bonus_program.Employee employee) {
+		this.employee = employee;
+	}
+
+	public Bonus(java.lang.Double amount,
+			dtables.bonus_program.Employee employee) {
+		this.amount = amount;
+		this.employee = employee;
+	}
 
 }
