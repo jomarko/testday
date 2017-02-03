@@ -10,6 +10,8 @@ public class Employee implements java.io.Serializable {
 
 	private java.lang.Integer yearsOfService;
 
+	private java.lang.String name;
+
 	public Employee() {
 	}
 
@@ -21,8 +23,17 @@ public class Employee implements java.io.Serializable {
 		this.yearsOfService = yearsOfService;
 	}
 
-	public Employee(java.lang.Integer yearsOfService) {
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public Employee(java.lang.Integer yearsOfService, java.lang.String name) {
 		this.yearsOfService = yearsOfService;
+		this.name = name;
 	}
 
 }
