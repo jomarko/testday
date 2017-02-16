@@ -12,6 +12,8 @@ public class Employee implements java.io.Serializable {
 
 	private java.lang.String name;
 
+	private java.lang.Boolean bigAbsence;
+
 	public Employee() {
 	}
 
@@ -31,9 +33,19 @@ public class Employee implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public Employee(java.lang.Integer yearsOfService, java.lang.String name) {
+	public java.lang.Boolean getBigAbsence() {
+		return this.bigAbsence;
+	}
+
+	public void setBigAbsence(java.lang.Boolean bigAbsence) {
+		this.bigAbsence = bigAbsence;
+	}
+
+	public Employee(java.lang.Integer yearsOfService, java.lang.String name,
+			java.lang.Boolean bigAbsence) {
 		this.yearsOfService = yearsOfService;
 		this.name = name;
+		this.bigAbsence = bigAbsence;
 	}
 
 }
